@@ -14,5 +14,5 @@ module.exports = {
     globals: {
         module: 'readonly',
     },
-    maxWarnings: 20, // Set your desired maximum warning count here
+    maxWarnings: 20, 
 };
