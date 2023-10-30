@@ -1,7 +1,6 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const webpack = require('webpack');
 
@@ -14,7 +13,6 @@ module.exports = (env, argv) => {
         output: {
             filename: 'bundle.js',
             path: path.resolve(__dirname, 'dist'),
-            publicPath: isDevelopment ? '/' : '/SDE24-WebEng-FrontendApplication/',
         },
         module: {
             rules: [
@@ -38,8 +36,10 @@ module.exports = (env, argv) => {
         devtool: isDevelopment ? 'inline-source-map' : 'source-map',
         devServer: {
             static: {
-                directory: __dirname,
+                directory: path.join(__dirname, 'dist'), // Serve content from the 'dist' directory
             },
+            compress: true,
+            port: 8080, // Set the port you prefer
         },
         plugins: [
             new HtmlWebpackPlugin({
