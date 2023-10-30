@@ -5,19 +5,17 @@ module.exports = {
     },
     extends: 'eslint:recommended',
     parserOptions: {
-        sourceType: 'module', 
-        'ecmaVersion': 2017
+        sourceType: 'module',
+        ecmaVersion: 2017,
     },
     rules: {
-        indent: ['error', 4], 
+        indent: ['error', 8], 
         'linebreak-style': ['error', 'unix'],
         'quotes': ['error', 'single'],
         'semi': ['error', 'always'],
-        'no-undef': 'off', // Ignore 'no-undef' error
-        'no-async-promise-executor': 'off', // Ignore 'no-async-promise-executor' error
+        'no-undef': 'off', 
     },
     globals: {
         module: 'readonly',
     },
-    
 };
