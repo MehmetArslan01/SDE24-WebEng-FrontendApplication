@@ -6,6 +6,7 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'), // Output bundled file to the 'dist' directory
+        publicPath: '/SDE24-WebEng-FrontendApplication/',
     },
     module: {
         rules: [
