@@ -9,9 +9,10 @@ module.exports = {
         ecmaVersion: 2017,
     },
     rules: {
-        'quotes': ['error', 'single'], // Überprüft nur die Regel für einzelne Anführungszeichen
+        'quotes': ['error', 'single'],
     },
     globals: {
         module: 'readonly',
     },
+    maxWarnings: 20, // Set your desired maximum warning count here
 };
