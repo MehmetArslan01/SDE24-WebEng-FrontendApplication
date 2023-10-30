@@ -27,11 +27,8 @@ jobs:
       - name: Lint Code
         run: npm run lint
 
-      - name: Change permissions for vite
-        run: chmod +x node_modules/.bin/vite
-
       - name: Build
-        run: node_modules/.bin/vite build --mode production
+        run: npm run build
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
