@@ -7,7 +7,9 @@
     "test": "jest",
     "dev": "webpack serve --mode development",
     "build": "webpack --mode production",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "lint-check": "eslint . --quiet --max-warnings 10"
+
   },
   "repository": {
     "type": "git",
