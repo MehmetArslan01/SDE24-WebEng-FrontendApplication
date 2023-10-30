@@ -76,3 +76,11 @@ ul {
 h1 {
     text-align: center;
 }
+
+.img-fluid {
+    max-width: 100% !important;
+    height: auto;
+}
+
+
+
