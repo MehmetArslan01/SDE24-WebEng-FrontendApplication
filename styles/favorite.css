@@ -1,0 +1,54 @@
+
+/* Styles for a row of favorite items */
+#favorites-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/* Styles for favorite cards */
+.favorite-card {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    max-height: 400px;
+}
+
+/* Media query for screens smaller than 768 pixels */
+@media (max-width: 768px) {
+    /* Adjust the width of favorite cards for smaller screens */
+    .favorite-card {
+        width: calc(100% - 20px);
+    }
+}
+
+/* Styles for favorite dog images */
+.favorite-dog-image {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Styles for a "Delete" button */
+.btn-removeFavorites {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+
+.btn-removeFavorites {
+    background-color: #c82333;
+}
+
+h1 {
+    text-align: center;
+    }

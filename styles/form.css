@@ -1,0 +1,59 @@
+/* Custom CSS for the form */
+.was-validated .form-control:invalid {
+    border: 1px solid red;
+}
+
+.form-container {
+    max-width: 400px; /* Adjust the max width as needed */
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center; /* Center the form content */
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left; /* Reset text alignment for form controls */
+}
+
+label {
+    font-weight: bold;
+}
+
+
+
+/* Media query for screens larger than 768px (adjust as needed) */
+@media (min-width: 769px) {/* Custom CSS for the submit button */
+   
+    
+    .form-container {
+        max-width: 800px; /* Increase the max width for larger screens */
+    }
+}
+
+/* Add more media queries as needed for larger screens */
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.btn-primary {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    color: #fff; /* White text color for hover state */
+}
+
+/* Center the button text */
+.btn-primary {
+    text-align: center;
+}
+
