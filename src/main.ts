@@ -1,4 +1,4 @@
-import { fetchRandomDogImages } from './api.js';
+import { fetchRandomDogImages } from './api';
 
  export function createDogImageCard(imageUrl: string) {
     const card = document.createElement('div');
