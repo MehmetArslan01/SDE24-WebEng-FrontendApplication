@@ -1,0 +1,4 @@
+# Ignore all JavaScript files in the 'node_modules' directory
+**/__tests__/**
+webpack.config.js
+

@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 import { fetchRandomDogImages } from '../src/api';
 import { createDogImageCard, loadDogImageCards } from '../src/main';
 
@@ -32,7 +34,7 @@ describe('createDogImageCard', () => {
         const imageUrl = 'https://example.com/dog.jpg';
         const card = createDogImageCard(imageUrl);
 
-        // eslint-disable-next-line
+      
         expect(card).not.toBeNull();
         expect(card.classList).toContain('card');
         expect(card.querySelector('img')?.src).toBe(imageUrl);

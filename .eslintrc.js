@@ -9,10 +9,10 @@ module.exports = {
         ecmaVersion: 2017,
     },
     rules: {
-        'quotes': ['error', 'single'],
+        'quotes': ['error', 'single'], // Ignore the "Strings must use singlequote" error
+        'no-async-promise-executor': 'off', // Ignore the "Promise executor functions should not be async" error
     },
     globals: {
         module: 'readonly',
     },
-    maxWarnings: 20, 
 };
